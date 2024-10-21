@@ -1,0 +1,105 @@
+/* General styling for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif; /* Changed font for a modern look */
+    background-color: #f0f8ff; /* Softer light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff; /* White background */
+    padding: 50px; /* Increased padding for more space */
+    border-radius: 20px; /* Softer, larger border radius */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+    width: 100%;
+    max-width: 480px; /* Increased width */
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Container hover effect */
+.container:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Title styling */
+h1 {
+    font-size: 32px; /* Larger font size for emphasis */
+    color: #2c3e50; /* Darker navy for title */
+    margin-bottom: 20px;
+    font-weight: bold; /* Bold title */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 25px; /* Increased margin */
+}
+
+/* Label styling */
+label {
+    font-size: 18px; /* Larger label font */
+    color: #34495e; /* Darker color for better contrast */
+    display: block; /* Block display for labels */
+    margin-bottom: 8px; /* Margin below label */
+}
+
+/* Input styling */
+input[type="text"] {
+    width: 100%;
+    padding: 15px; /* Increased padding for comfort */
+    font-size: 18px; /* Larger input font */
+    border: 2px solid #2980b9; /* Changed border color */
+    border-radius: 10px; /* Softer corners */
+    margin-top: 5px; /* Margin above input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition for focus effect */
+}
+
+/* Input focus effect */
+input[type="text"]:focus {
+    border-color: #3498db; /* Lighter blue on focus */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Subtle glow effect */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+button {
+    background-color: #2980b9; /* Button color */
+    color: white;
+    padding: 15px 25px; /* Increased padding */
+    font-size: 18px; /* Larger button font */
+    border: none;
+    border-radius: 10px; /* Softer corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px; /* Margin above button */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #1f618d; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slightly lift effect */
+}
+
+/* Result styling */
+#result {
+    margin-top: 25px;
+    font-size: 22px; /* Larger font size for result */
+    color: #2c3e50; /* Darker text for results */
+    font-weight: bold; /* Bold text for emphasis */
+    min-height: 30px; /* Ensures space for result */
+    transition: opacity 0.3s ease; /* Fade effect */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 25px; /* Less padding for smaller screens */
+    }
+}
